@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe Polish's Personal Invitation | Genius Network Annual Event 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@300;700;800&family=Fredoka:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --dark: #080d1b;
+      --gold: #ffb525;
+      --orange: #ff9625;
+      --light: #ffffff;
+      --warm: #f7f5f0;
+      --muted: #555e70;
+      --border: #e0dcd4;
+    }
+    body { background: var(--light); color: var(--dark); font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+
+    /* Header */
+    header { background: var(--dark); padding: 18px 32px; text-align: center; }
+    .logo-text { font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: #fff; }
+    .gn-brand { font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-style: normal; }
+
+    /* Hero */
+    .hero { position: relative; background-image: url("Group Photo (1).jpg"); background-size: cover; background-position: center 60%; min-height: 500px; display: flex; align-items: flex-end; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(8,13,27,0.25) 0%, rgba(8,13,27,0.72) 65%, #ffffff 100%); }
+    .hero-content { position: relative; z-index: 1; width: 100%; text-align: center; padding: 0 24px 52px; }
+    .event-label { display: inline-block; font-size: 1rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); border: 2px solid var(--gold); padding: 8px 24px; border-radius: 2px; margin-bottom: 20px; }
+    .hero-event-name { font-family: 'Montserrat', sans-serif; font-size: clamp(1.6rem, 4.2vw, 3rem); font-weight: 800; color: #fff; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+    .hero-event-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(5rem, 17vw, 13rem); color: var(--gold); line-height: 0.9; text-transform: uppercase; text-shadow: 0 4px 24px rgba(0,0,0,0.3); letter-spacing: 0.01em; display: block; word-spacing: 0.12em; }
+
+    /* Event Info */
+    .event-info { background: var(--light); padding: 56px 24px 48px; text-align: center; }
+    .section-eyebrow { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .event-info h2 { font-family: 'Montserrat', sans-serif; font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 800; color: var(--dark); margin-bottom: 40px; }
+
+
+    /* CTA */
+    .cta-section { position: relative; background-image: url("Joe on stage.jpg"); background-size: cover; background-position: center 15%; min-height: 420px; display: flex; align-items: center; justify-content: center; }
+    .cta-overlay { position: absolute; inset: 0; background: rgba(8,13,27,0.78); }
+    .cta-content { position: relative; z-index: 1; text-align: center; padding: 64px 24px; max-width: 680px; width: 100%; }
+    .cta-tagline { font-family: 'Montserrat', sans-serif; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: #fff; margin-bottom: 8px; line-height: 1.2; }
+    .cta-sub { font-size: 0.88rem; font-weight: 600; color: rgba(255,255,255,0.65); margin-bottom: 32px; letter-spacing: 0.05em; }
+    .cta-btn { display: inline-block; background: linear-gradient(90deg, var(--gold), var(--orange)); color: var(--dark); text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 20px 56px; border-radius: 2px; transition: transform 0.15s ease, opacity 0.15s; }
+    .cta-btn:hover { transform: translateY(-2px); opacity: 0.9; }
+    .cta-note { margin-top: 20px; font-size: 0.78rem; color: rgba(255,255,255,0.45); }
+    .cta-note a { color: var(--gold); }
+
+    /* Footer */
+    footer { background: var(--dark); padding: 32px 24px; text-align: center; }
+    .footer-logo { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 8px; }
+    .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.25); }
+
+
+    .date-script {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-weight: 700;
+      color: var(--dark);
+      border: 3px solid var(--dark);
+      padding: 10px 40px;
+      border-radius: 2px;
+      letter-spacing: 0.04em;
+      margin-bottom: 24px;
+    }
+
+    .venue-wrapper { display: inline-flex; flex-direction: column; align-items: center; margin-top: 20px; }
+    .venue-pin { width: 36px; height: 36px; margin-bottom: 10px; }
+    .venue-name { font-family: 'Montserrat', sans-serif; font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 800; color: var(--dark); margin-bottom: 4px; }
+    .venue-city { font-size: clamp(0.95rem, 2vw, 1.1rem); font-weight: 600; color: var(--muted); margin-bottom: 0; letter-spacing: 0.05em; }
+    @media (max-width: 600px) {
+      .details-grid { flex-direction: column; }
+      .detail-card { border-right: none; border-bottom: 2px solid var(--border); }
+      .detail-card:last-child { border-bottom: none; }
+      .cta-btn { width: 100%; max-width: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-text"><span class="gn-brand">Genius Network</span>®</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="event-label">A Personal Invitation</div>
+      <p class="hero-event-name"><span class="gn-brand">Genius Network</span>®</p>
+      <div class="hero-event-title">Annual Event</div>
+    </div>
+  </section>
+
+  <section class="event-info">
+    <p class="section-eyebrow">Event Details</p>
+    <div style="margin-bottom:0"><span class="date-script">November 5th–7th, 2026</span></div>
+    <div class="venue-wrapper">
+      <svg class="venue-pin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="var(--gold)"/>
+        <circle cx="12" cy="9" r="2.5" fill="white"/>
+      </svg>
+      <h2 class="venue-name">JW Marriott Camelback Inn Resort</h2>
+      <p class="venue-city">Scottsdale, Arizona</p>
+    </div>
+  </section>
+
+
+  <section class="cta-section">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <p class="cta-tagline">Reserve Your Spot at the Alumni Rate</p>
+      <p class="cta-sub">November 5–7, 2026 &nbsp;·&nbsp; JW Marriott Camelback Inn Resort, Scottsdale, AZ</p>
+      <a href="ALUMNI-LINK-HERE" class="cta-btn">Register at the Alumni Rate</a>
+      <p class="cta-note">Questions? <a href="mailto:info@joepolish.com">info@joepolish.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-logo"><span class="gn-brand">Genius Network</span>®</p>
+    <p class="footer-copy">&copy; 2026 Joe Polish / Genius Network. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
